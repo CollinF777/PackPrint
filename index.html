@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PackPrint Login</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+    <header>
+        <div class="container nav-wrap">
+            <p class="brand">PackPrint</p>
+        </div>
+    </header>
+
+    <main class="login-container">
+        <div class="login-card">
+            <div class="login-heading">
+                <h1>Welcome Back</h1>
+                <p>Please login to your PackPrint account to continue</p>
+            </div>
+
+            <form id="login-form" action="#" method="post" onsubmit="return login()">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required="required" />
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required="required" />
+                
+                <button type="submit" class="login-button">Login</button>
+                
+                <p id="login-message">Demo login: enter any email and password</p>
+
+                <p class="create-account">Don't have an account? <a href="createAcc.html">Create an Account</a></p>
+            </form>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <p>PackPrint &copy; 2026</p>
+    </footer>
+
+    <script src="js/auth.js"></script>
+</body>
+</html>
