@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PackPrint - Create Account</title>
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/auth.css" />
+</head>
+<body>
+    <header>
+        <div class="container nav-wrap">
+            <p class="brand">PackPrint</p>
+        </div>
+    </header>
+
+    <main class="login-container">
+        <div class="login-card">
+            <div class="login-heading">
+                <h1>Create Account</h1>
+                <p>Sign up for your PackPrint account to get started with managing your business printing and packaging orders.</p>
+            </div>
+
+            <form id="account-form" action="#" method="post" onsubmit="return createAccount();">
+                <label for="buisness-name">Business Name:</label>
+                <input type="text" id="buisness-name" name="buisnessName" placeholder="Enter your business name" required="required" />
+
+                <label for="contact-name">Contact Name:</label>
+                <input type="text" id="contact-name" name="contactName" placeholder="Enter your full name" required="required" />
+
+                <label for="email">Business Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your business email" required="required" />
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" minlength="8" required="required" />
+                
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirmPassword" placeholder="Confirm your password" minlength="8" required="required" />
+
+                <button type="submit" class="login-button">Create Account</button>
+
+                <p class="create-account">Already have an account? <a href="index.html">Log in</a></p>
+            </form>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <p>PackPrint &copy; 2026</p>
+    </footer>
+
+    <script src="js/auth.js"></script>
+</body>
+</html>
