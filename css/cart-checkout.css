@@ -1,0 +1,97 @@
+/* CSS used on the cart and checkout pages only */
+.cart-layout {
+    display: grid;
+    grid-template-columns: 1.5fr .8fr;
+    gap: 22px;
+    align-items: start;
+}
+
+.cart-row {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    gap: 16px;
+    align-items: center;
+    padding: 17px 0;
+    border-bottom: 1px solid var(--line);
+}
+
+.cart-row:first-child {
+    padding-top: 0;
+}
+
+.cart-row h3 {
+    font-size: 1rem;
+    margin-bottom: 4px;
+}
+
+.cart-row p {
+    font-size: .8rem;
+    color: var(--muted);
+    margin: 0;
+}
+
+.cart-price {
+    font-weight: 800;
+    white-space: nowrap;
+}
+
+.summary-panel {
+    background: var(--paper);
+}
+
+.summary-line {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 13px 0;
+    border-bottom: 1px solid var(--line);
+    font-size: .9rem;
+}
+
+.summary-total {
+    font-size: 1.05rem;
+    font-weight: 800;
+    border-bottom: 0;
+    padding-top: 18px;
+}
+
+.steps-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: grid;
+    gap: 20px;
+}
+
+.steps-list li {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+}
+
+.steps-list li>span {
+    display: grid;
+    place-items: center;
+    width: 29px;
+    height: 29px; 
+    border-radius: 50%;
+    background: var(--yellow);
+    font-weight: 900;
+    flex-shrink: 0;
+}
+
+.steps-list p {
+    color: var(--muted);
+    font-size: .83rem;
+    margin: 4px 0 0;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 15px;
+}
+
+.full-field {
+    grid-column: 1/-1;
+}
