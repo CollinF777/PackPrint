@@ -31,5 +31,12 @@ function updateCartCount() {
     document.getElementById("cart-count").textContent = count;
 }
 
+function logout() {
+    alert("You have been logged out.");
+    window.location.href = "index.html";
+    // stop link from loading twice
+    return false;
+}
+
 // So everytime the page changes the cart count stays right
 updateCartCount();
