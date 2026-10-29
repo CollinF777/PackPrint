@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orders - PackPrint</title>
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+    <header class="site-header">
+        <div class="container nav-wrap">
+            <a class="brand" href="dashboard.html">
+                <span class="brand-mark">P</span>
+                <span>Pack<span class="brand-accent">Print</span></span>
+            </a>
+            <nav id="primary-nav" class="primary-nav">
+                <a href="dashboard.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="suppliers.html">Suppliers</a>
+                <a class="active" href="orders.html">Orders</a>
+                <a class="nav-cart" href="cart.html">Cart <span id="cart-count" class="count">0</span></a>
+                <a class="button button-small" href="account.html">My Account</a>
+            </nav>
+        </div>
+    </header>
+    <main id="main" class="container page-main">
+        <div class="page-intro">
+            <p class="eyebrow">ORDER MANAGEMENT</p>
+            <h1>Keep every order in view.</h1>
+            <p>A single place to review order progress across supplier partners</p>
+        </div>
+        <div class="panel table-panel">
+            <div class="table-heading">
+                <h2>Recent orders</h2>
+                <span class="status status-live">Sample data</span>
+            </div>
+            <div class="table-scroll">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Order</th>
+                            <th>Date</th>
+                            <th>Supplier</th>
+                            <th>Items</th>
+                            <th>Total</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#PP-1048</td>
+                            <td>Oct 18, 2026</td>
+                            <td>Northstar Packaging</td>
+                            <td>Shipping boxes</td>
+                            <td>$240.00</td>
+                            <td>
+                                <span class="status status-live">In production</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#PP-1042</td>
+                            <td>Oct 14, 2026</td>
+                            <td>BrightMark Print</td>
+                            <td>Custom labels</td>
+                            <td>$96.00</td>
+                            <td>
+                                <span class="status status-pending">Awaiting dispatch</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#PP-1031</td>
+                            <td>Oct 08, 2026</td>
+                            <td>Paper &amp; Press Co.</td>
+                            <td>Business cards</td>
+                            <td>$72.00</td>
+                            <td>
+                                <span class="status status-complete">Delivered</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="small-note">All orders and statuses shown are fictional examples. This page is just a concept, not actual live tracking.</p>
+        </div>
+        <section class="integration-panel">
+            <div>
+                <p class="eyebrow">REPEAT PURCHASING</p>
+                <h2>Ordering the same supplies again?</h2>
+                <p>A future version could save order templates and use supplier availability data to simplify replenishment.</p>
+            </div>
+            <a class="button" href="products.html">Browse catalog →</a>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="container footer-bottom">
+            <span>© 2026 PackPrint concept</span>
+            <a href="account.html">My account</a>
+        </div>
+    </footer>
+</body>
+</html>
