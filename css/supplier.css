@@ -1,0 +1,70 @@
+/* CSS used for the supplier parts on the supplier page */
+.supplier-list {
+    display: grid;
+    gap: 14px;
+}
+
+.supplier-card {
+    display: grid;
+    grid-template-columns: 72px 1fr auto;
+    align-items: center;
+    gap: 20px;
+    padding: 22px;
+    border: 1px solid var(--line);
+    border-radius: 13px;
+}
+
+.supplier-monogram {
+    width: 64px;
+    height: 64px;
+    display: grid;
+    place-items: center;
+    border-radius: 14px;
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+
+.monogram-yellow {
+    background: var(--yellow);
+}
+
+.monogram-red {
+    background: var(--red);
+    color: white;
+}
+
+.monogram-dark {
+    background: var(--ink);
+    color: white;
+}
+
+.supplier-title-row {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    flex-wrap: wrap;
+}
+
+.supplier-title-row h2 {
+    font-size: 1.28rem;
+}
+
+.supplier-info p {
+    color: var(--muted);
+    font-size: .9rem;
+    margin: 7px 0 11px;
+}
+
+.tag-row {
+    display: flex;
+    gap: 7px;
+    flex-wrap: warp;
+}
+
+.tag-row span {
+    font-size: .72rem;
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    padding: 4px 8px;
+    color: #5c5a54;
+}
