@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Products - PackPrint</title>
     <link rel="stylesheet" href="css/global.css" />
     <link rel="stylesheet" href="css/styles.css" />
@@ -34,12 +34,11 @@
         <div class="catalog-toolbar">
             <label class="search-box">
                 <span class="visually-hidden">Search products</span>
-                <input id="product-search" type="search" placeholder="Search boxes, labels, business cards..." /> 
+                <input id="product-search" type="search" placeholder="Search boxes, labels, business cards..." oninput="filterProducts()" /> 
             </label>
             <label class="filter-label">
                 Category
-                <!-- Note that the selector wont actually do anything till I add react or something similar -->
-                <select id="category-filter">
+                <select id="category-filter" onchange="filterProducts()">
                     <option value="">All categories</option>
                     <option value="shipping">Shipping boxes</option>
                     <option value="labels">Labels &amp; stickers</option>
@@ -63,7 +62,7 @@
                 <p>Durable everyday shipper for small business orders.</p>
                 <div class="product-bottom">
                     <strong>$1.20 <small>/ unit</small></strong>
-                    <button class="button button-small" data-id="box" data-name="Shipping Box" data-price="1.20" type="button">Add to cart</button>
+                    <button class="button button-small" data-id="box" data-name="Shipping Box" data-price="1.20" type="button" onclick="addToCart(this)">Add to cart</button>
                 </div>
             </article>
             <article class="product-card" data-category="labels" data-name="custom roll labels">
@@ -80,7 +79,7 @@
                 <p>Branded labels for your products and packaging.</p>
                 <div class="product-bottom">
                     <strong>$0.08 <small>/ label</small></strong>
-                    <button class="button button-small" data-id="labels" data-name="Custom Roll Labels" data-price="0.08" type="button">Add to cart</button>
+                    <button class="button button-small" data-id="labels" data-name="Custom Roll Labels" data-price="0.08" type="button" onclick="addToCart(this)">Add to cart</button>
                 </div>
             </article>
             <article class="product-card" data-category="print" data-name="business cards">
@@ -97,7 +96,7 @@
                 <p>Clean, professional cards for your team and events.</p>
                 <div class="product-bottom">
                     <strong>$18.00 <small>/ 250</small></strong>
-                    <button class="button button-small" data-id="cards" data-name="Business Cards" data-price="18.00" type="button">Add to cart</button>
+                    <button class="button button-small" data-id="cards" data-name="Business Cards" data-price="18.00" type="button" onclick="addToCart(this)">Add to cart</button>
                 </div>
             </article>
             <article class="product-card" data-category="shipping" data-name="recycled padded mailer">
@@ -114,7 +113,7 @@
                 <p>Lightweight protection for small, non-fragile goods.</p>
                 <div class="product-bottom">
                     <strong>$0.72 <small>/ unit</small></strong>
-                    <button class="button button-small" data-id="mailer" data-name="Recycled Padded Mailer" data-price="0.72" type="button">Add to cart</button>
+                    <button class="button button-small" data-id="mailer" data-name="Recycled Padded Mailer" data-price="0.72" type="button" onclick="addToCart(this)">Add to cart</button>
                 </div>
             </article>
             <article class="product-card" data-category="print" data-name="marketing-postcards">
@@ -125,13 +124,13 @@
                 </div>
                 <div class="product-meta">
                     <span class="pill">Business print</span>
-                    <span class="supplier-label">Paper & Press Co.</span>
+                    <span class="supplier-label">Paper &amp; Press Co.</span>
                 </div>
                 <h2>Marketing Postcards</h2>
                 <p>Colorful printed pieces for promotions and inserts</p>
                 <div class="product-bottom">
                     <strong>$32.00 <small>/ 100</small></strong>
-                    <button class="button button-small" data-id="postcards" data-name="Marketing postcards" data-price="32.00" type="button">Add to cart</button>
+                    <button class="button button-small" data-id="postcards" data-name="Marketing postcards" data-price="32.00" type="button" onclick="addToCart(this)">Add to cart</button>
                 </div>
             </article>
         </div>
@@ -153,5 +152,7 @@
             </span>
         </div>
     </footer>
+    <script src="js/global.js"></script>
+    <script src="js/products.js"></script>
 </body>
 </html>
