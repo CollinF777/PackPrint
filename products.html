@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - PackPrint</title>
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/products.css" />
+</head>
+<body>
+    <header class="site-header">
+        <div class="container nav-wrap">
+            <a class="brand" href="index.html">
+                <span class="brand-mark">P</span>
+                <span>Pack<span class="brand-accent">Print</span></span>
+            </a>
+            <nav id="primary-nav" class="primary-nav">
+                <a href="dashboard.html">Home</a>
+                <a class="active" href="products.html">Products</a>
+                <a href="suppliers.html">Suppliers</a>
+                <a href="orders.html">Orders</a>
+                <a class="nav-cart" href="cart.html">Cart <span id="cart-count" class="count">0</span></a>
+                <a class="button button-small" href="account.html">My Account</a>
+            </nav>
+        </div>
+    </header>
+    <main id="main" class="container page-main">
+        <div class="page-intro">
+            <p class="eyebrow">PRODUCT CATALOG</p>
+            <h1>Find the right fit for your next order.</h1>
+            <p>Explore illustrative products across packaging and print. Use search and category filters to narrow the catalog.</p>
+        </div>
+        <div class="catalog-toolbar">
+            <label class="search-box">
+                <span class="visually-hidden">Search products</span>
+                <input id="product-search" type="search" placeholder="Search boxes, labels, business cards..." /> 
+            </label>
+            <label class="filter-label">
+                Category
+                <!-- Note that the selector wont actually do anything till I add react or something similar -->
+                <select id="category-filter">
+                    <option value="">All categories</option>
+                    <option value="shipping">Shipping boxes</option>
+                    <option value="labels">Labels &amp; stickers</option>
+                    <option value="print">Business print</option>
+                </select>
+            </label>
+        </div>
+        <p id="results-message" class="results-message">Showing all products</p>
+        <div id="product-grid" class="product-grid">
+            <article class="product-card" data-category="shipping" data-name="shipping box">
+                <div class="product-art">
+                    <img src="images/cardboard-boxes.jpg"
+                         alt="Cardboard shipping boxes stacked on top of each other" 
+                         width="800" height="600"/>
+                </div>
+                <div class="product-meta">
+                    <span class="pill">Shipping boxes</span>
+                    <span class="supplier-label">Northstar Packaging</span>
+                </div>
+                <h2>Shipping Boxes</h2>
+                <p>Durable everyday shipper for small business orders.</p>
+                <div class="product-bottom">
+                    <strong>$1.20 <small>/ unit</small></strong>
+                    <button class="button button-small" data-id="box" data-name="Shipping Box" data-price="1.20" type="button">Add to cart</button>
+                </div>
+            </article>
+            <article class="product-card" data-category="labels" data-name="custom roll labels">
+                <div class="product-art">
+                    <img src="images/roll-labels.jpg"
+                         alt="Roll of labels, blank"
+                         width="800" height="600"/>   
+                </div>
+                <div class="product-meta">
+                    <span class="pill">Labels &amp; stickers</span>
+                    <span class="supplier-label">BrightMark Print</span>
+                </div>
+                <h2>Custom Roll Labels</h2>
+                <p>Branded labels for your products and packaging.</p>
+                <div class="product-bottom">
+                    <strong>$0.08 <small>/ label</small></strong>
+                    <button class="button button-small" data-id="labels" data-name="Custom Roll Labels" data-price="0.08" type="button">Add to cart</button>
+                </div>
+            </article>
+            <article class="product-card" data-category="print" data-name="business cards">
+                <div class="product-art">
+                    <img src="images/business-cards.jpg"
+                         alt="Stack of business cards"
+                         width="800" height="600"/>
+                </div>
+                <div class="product-meta">
+                    <span class="pill">Business print</span>
+                    <span class="supplier-label">Paper &amp; Press Co.</span>
+                </div>
+                <h2>Business Cards</h2>
+                <p>Clean, professional cards for your team and events.</p>
+                <div class="product-bottom">
+                    <strong>$18.00 <small>/ 250</small></strong>
+                    <button class="button button-small" data-id="cards" data-name="Business Cards" data-price="18.00" type="button">Add to cart</button>
+                </div>
+            </article>
+            <article class="product-card" data-category="shipping" data-name="recycled padded mailer">
+                <div class="product-art">
+                    <img src="images/padded-mailer.jpg" 
+                         alt="Image of a plain padded mailer"
+                         width="800" height="600" />
+                </div>
+                <div class="product-meta">
+                    <span class="pill">Shipping boxes</span>
+                    <span class="supplier-label">Northstar Packaging</span>
+                </div>
+                <h2>Recycled Padded Mailer</h2>
+                <p>Lightweight protection for small, non-fragile goods.</p>
+                <div class="product-bottom">
+                    <strong>$0.72 <small>/ unit</small></strong>
+                    <button class="button button-small" data-id="mailer" data-name="Recycled Padded Mailer" data-price="0.72" type="button">Add to cart</button>
+                </div>
+            </article>
+            <article class="product-card" data-category="print" data-name="marketing-postcards">
+                <div class="product-art">
+                    <img src="images/marketing-postcards.jpg"
+                         alt="Image of different, unique marketing postcards"
+                         width="800" height="600" />
+                </div>
+                <div class="product-meta">
+                    <span class="pill">Business print</span>
+                    <span class="supplier-label">Paper & Press Co.</span>
+                </div>
+                <h2>Marketing Postcards</h2>
+                <p>Colorful printed pieces for promotions and inserts</p>
+                <div class="product-bottom">
+                    <strong>$32.00 <small>/ 100</small></strong>
+                    <button class="button button-small" data-id="postcards" data-name="Marketing postcards" data-price="32.00" type="button">Add to cart</button>
+                </div>
+            </article>
+        </div>
+        <div class="notice">
+            <strong>Prototype pricing:</strong> These prices and supplier listings are fictional examples for the concept of PackPrint, not real offers
+        </div> 
+    </main>
+    <footer class="site-footer">
+        <div class="container footer-bottom">
+            <span>© 2026 PackPrint concept</span>
+            <span>
+                <a href="dashboard.html">Home</a>
+                ·
+                <a href="suppliers.html">
+                    Suppliers
+                </a>
+                ·
+                <a href="cart.html">Cart</a>
+            </span>
+        </div>
+    </footer>
+</body>
+</html>
