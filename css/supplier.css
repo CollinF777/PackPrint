@@ -58,7 +58,7 @@
 .tag-row {
     display: flex;
     gap: 7px;
-    flex-wrap: warp;
+    flex-wrap: wrap;
 }
 
 .tag-row span {
