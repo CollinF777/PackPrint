@@ -1,0 +1,52 @@
+/* CSS for the sync page */
+.dashboard-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+    margin-bottom: 23px;
+}
+
+.stat-card {
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 19px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.stat-card span {
+    font-size: .8rem;
+    color: var(--muted);
+}
+
+.stat-card strong {
+    font-size: 1.65 rem;
+    letter-spacing: -.04em;
+}
+
+.stat-card small {
+    font-size: .72rem;
+    color: var(--muted);
+}
+
+.sync-arrows {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    white-space: nowrap;
+    font-weight: 800;
+}
+
+.sync-arrows span {
+    background: white;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 12px;
+}
+
+.sync-arrows strong {
+    font-size: 1.8rem;
+    color: var(--red);
+}
