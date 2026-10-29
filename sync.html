@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Supplier Sync Dashboard - PackPrint</title>
     <link rel="stylesheet" href="css/global.css" />
     <link rel="stylesheet" href="css/styles.css" />
@@ -56,7 +56,7 @@
         <section class="panel table-panel">
             <div class="table-heading">
                 <h2>Integration activity</h2>
-                <button id="simulate-sync" class="button button-small" type="button">Simulate sync</buttion>
+                <button id="simulate-sync" class="button button-small" type="button" onclick="simulateSync()">Simulate sync</button>
             </div>
             <div class="table-scroll">
                 <table>
@@ -124,5 +124,7 @@
             <a href="suppliers.html">Supplier directory</a>
         </div>
     </footer>
+    <script src="js/global.js"></script>
+    <script src="js/sync.js"></script>
 </body>
 </html>
