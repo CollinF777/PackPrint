@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supplier Sync Dashboard - PackPrint</title>
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/sync.css" />
+</head>
+<body>
+    <header class="site-header">
+        <div class="container nav-wrap">
+            <a class="brand" href="dashboard.html">
+                <span class="brand-mark">P</span>
+                <span>Pack<span class="brand-accent">Print</span></span>
+            </a>
+            <nav id="primary-nav" class="primary-nav">
+                <a href="dashboard.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="suppliers.html">Suppliers</a>
+                <a href="orders.html">Orders</a>
+                <a class="nav-cart" href="cart.html">Cart <span id="cart-count" class="count">0</span></a>
+                <a class="button button-small" href="account.html">My Account</a>
+            </nav>
+        </div>
+    </header>
+    <main id="main" class="container page-main">
+        <div class="page-into">
+            <p class="eyebrow">OPERATIONS CONCEPT</p>
+            <h1>Supplier data, at a glance.</h1>
+            <p>A visual concept for monitoring the two-way exchange of product and order information.</p>
+        </div>
+        <div class="dashboard-stats">
+            <article class="stat-card">
+                <span>Supplier connections</span>
+                <strong>3</strong>
+                <small>Illustartive partners</small>
+            </article>
+            <article class="stat-card">
+                <span>Catalog items</span>
+                <strong>126</strong>
+                <small>Sample synchronized records</small>
+            </article>
+            <article class="stat-card">
+                <span>Last sync</span>
+                <strong>10:42 AM</strong>
+                <small>Oct 29, 2026 · demo</small>
+            </article>
+            <article class="stat-card">
+                <span>Needs attention</span>
+                <strong>1</strong>
+                <small>Simulated pending sync</small>
+            </article>
+        </div>
+        <section class="panel table-panel">
+            <div class="table-heading">
+                <h2>Integration activity</h2>
+                <buttion id="simulate-sync" class="button button-small" type="button">Simulate sync</buttion>
+            </div>
+            <div class="table-scroll">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Partner</th>
+                            <th>Inbound data</th>
+                            <th>Outbound data</th>
+                            <th>Last activity</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="sync-rows">
+                        <tr>
+                            <td>Northstar Packaging</td>
+                            <td>Catalog, inventory</td>
+                            <td>Purchase orders</td>
+                            <td>10:42 AM</td>
+                            <td>
+                                <span class="status status-live">Connected · demo</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>BrightMark Print</td>
+                            <td>Pricing, catalog</td>
+                            <td>Order requests</td>
+                            <td>10:37 AM</td>
+                            <td>
+                                <span class="status status-live">Connected · demo</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Paper &amp; Press Co.</td>
+                            <td>Catalog update</td>
+                            <td>Purchase orders</td>
+                            <td>Yesterday</td>
+                            <td>
+                                <span class="status status-pending">Pending · demo</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p id="sync-message" class="form-message">No live supplier systems are connected.</p>
+        </section>
+        <section class="integration-panel">
+            <div>
+                <p class="eyebrow">INTEGRATION MODEL</p>
+                <h2>Bidirectional API synchronization</h2>
+                <p>Supplier systems can provide catalog, pricing, and inventory updates. PackPrint can send order details back and recieve fulfillment updates, with monitoring and error handling around each exchange.</p>
+            </div>
+            <div class="sync-arrows">
+                <span>Supplier API</span>
+                <strong>⇄</strong>
+                <span>PackPrint</span>
+            </div>
+        </section>
+        <div class="notice">
+            <strong>Demo only:</strong> The dashboard simulates a sync message in the browser. It does not connect to APIs, a database, or supplier systems.
+        </div>
+    </main>
+    <footer class="site-footer">
+        <div class="container footer-bottom">
+            <span>© 2026 PackPrint concept</span>
+            <a href="suppliers.html">Supplier directory</a>
+        </div>
+    </footer>
+</body>
+</html>
