@@ -64,4 +64,4 @@ function loadCategoryFromLink() {
 }
 
 loadCategoryFromLink();
-filterProduct();
+filterProducts();
