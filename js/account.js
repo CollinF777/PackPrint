@@ -1,5 +1,5 @@
 function sendMessage() {
-    if (!emailValidator) {
+    if (!emailValidator()) {
         return false;
     }
     document.getElementById("contact-message").textContent = "Thanks! This demo form has been validated locally. No message wans sent to a server.";
